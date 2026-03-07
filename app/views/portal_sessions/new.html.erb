@@ -1,0 +1,19 @@
+<h1>Portal Login</h1>
+
+<%= form_with url: "/portal/login", method: :post do %>
+
+  <div>
+    <label>Email</label>
+    <%= email_field_tag :email, nil, data: { testid: "portal-email" } %>
+  </div>
+
+  <div>
+    <label>Password</label>
+    <%= password_field_tag :password, nil, data: { testid: "portal-password" } %>
+  </div>
+
+  <div>
+    <%= submit_tag "Login", data: { testid: "portal-login-submit" } %>
+  </div>
+
+<% end %>

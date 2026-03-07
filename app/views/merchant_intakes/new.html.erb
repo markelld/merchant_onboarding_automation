@@ -1,0 +1,12 @@
+<h1>Merchant Intake</h1> 
+
+<%= form_with model: @merchant_intake, local: true do |f| %>
+    <div>
+        <%= f.label :google_doc_url, "Google Doc URL" %>
+        <%= f.text_field :google_doc_url %>
+    </div>
+
+    <%= f.submit "Create Intake" %>
+<% end %>    
+
+

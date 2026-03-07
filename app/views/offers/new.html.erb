@@ -1,0 +1,31 @@
+<h1>Create Offer</h1>
+
+<p>Advertiser: <%= @advertiser.merchant_name %></p>
+
+<%= form_with scope: :offer, url: "/portal/offers", method: :post do |f| %>
+  <%= f.hidden_field :advertiser_id, value: @advertiser.id %>
+
+  <div>
+    <%= f.label :offer_name, "Offer Name" %><br>
+    <%= f.text_field :offer_name, data: { testid: "offer-name" } %>
+  </div>
+
+  <div>
+    <%= f.label :payout_type, "Payout Type" %><br>
+    <%= f.text_field :payout_type, data: { testid: "payout-type" } %>
+  </div>
+
+  <div>
+    <%= f.label :payout_amount, "Payout Amount" %><br>
+    <%= f.text_field :payout_amount, data: { testid: "payout-amount" } %>
+  </div>
+
+  <div>
+    <%= f.label :tracking_method, "Tracking Method" %><br>
+    <%= f.text_field :tracking_method, data: { testid: "tracking-method" } %>
+  </div>
+
+  <br>
+
+  <%= f.submit "Create Offer", data: { testid: "create-offer" } %>
+<% end %>

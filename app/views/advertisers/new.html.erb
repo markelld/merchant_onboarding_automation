@@ -1,0 +1,34 @@
+<h1>Create Advertiser</h1>
+
+<%= form_with scope: :advertiser, url: "/portal/advertisers", method: :post do |f| %>
+
+  <div>
+    <%= f.label :merchant_name, "Merchant Name" %><br>
+    <%= f.text_field :merchant_name, data: { testid: "merchant-name" } %>
+  </div>
+
+  <div>
+    <%= f.label :website, "Website" %><br>
+    <%= f.text_field :website, data: { testid: "website" } %>
+  </div>
+
+  <div>
+    <%= f.label :contact_name, "Contact Name" %><br>
+    <%= f.text_field :contact_name, data: { testid: "contact-name" } %>
+  </div>
+
+  <div>
+    <%= f.label :contact_email, "Contact Email" %><br>
+    <%= f.email_field :contact_email, data: { testid: "contact-email" } %>
+  </div>
+
+  <div>
+    <%= f.label :vertical, "Vertical" %><br>
+    <%= f.text_field :vertical, data: { testid: "vertical" } %>
+  </div>
+
+  <br>
+
+  <%= f.submit "Create Advertiser", data: { testid: "create-advertiser" } %>
+
+<% end %>

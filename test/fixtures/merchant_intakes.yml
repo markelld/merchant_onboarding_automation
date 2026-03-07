@@ -1,0 +1,39 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  google_doc_url: MyString
+  google_doc_id: MyString
+  raw_text: MyText
+  merchant_name: MyString
+  website: MyString
+  contact_name: MyString
+  contact_email: MyString
+  vertical: MyString
+  country: MyString
+  currency: MyString
+  offer_name: MyString
+  payout_type: MyString
+  payout_amount: MyString
+  tracking_method: MyString
+  integration_notes: MyText
+  status: MyString
+  validation_errors: MyText
+
+two:
+  google_doc_url: MyString
+  google_doc_id: MyString
+  raw_text: MyText
+  merchant_name: MyString
+  website: MyString
+  contact_name: MyString
+  contact_email: MyString
+  vertical: MyString
+  country: MyString
+  currency: MyString
+  offer_name: MyString
+  payout_type: MyString
+  payout_amount: MyString
+  tracking_method: MyString
+  integration_notes: MyText
+  status: MyString
+  validation_errors: MyText

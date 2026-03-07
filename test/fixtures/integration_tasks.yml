@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  asana_task_gid: MyString
+  merchant_name: MyString
+  advertiser_external_id: MyString
+  offer_external_id: MyString
+  tracking_method: MyString
+  integration_notes: MyText
+  status: MyString
+
+two:
+  asana_task_gid: MyString
+  merchant_name: MyString
+  advertiser_external_id: MyString
+  offer_external_id: MyString
+  tracking_method: MyString
+  integration_notes: MyText
+  status: MyString

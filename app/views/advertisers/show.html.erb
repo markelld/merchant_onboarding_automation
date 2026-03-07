@@ -1,0 +1,15 @@
+<h1>Advertiser Created</h1>
+
+<p>
+  <strong>Advertiser ID:</strong>
+  <span data-testid="advertiser-id"><%= @advertiser.advertiser_external_id %></span>
+</p>
+
+<p>
+  <strong>Merchant:</strong>
+  <%= @advertiser.merchant_name %>
+</p>
+
+<%= link_to "Create Offer",
+    "/portal/offers/new?advertiser_id=#{@advertiser.id}",
+    data: { testid: "go-to-offer" } %>
