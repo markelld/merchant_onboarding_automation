@@ -127,7 +127,7 @@ tmp/portal_result.json
 
 Example:
 
-```json
+
 {
   "advertiser_external_id": "ADV-92981",
   "offer_external_id": "OFF-32299"
