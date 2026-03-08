@@ -1,20 +1,42 @@
-<h1>Automation Run</h1>
+<div class="max-w-xl mx-auto mt-16 bg-white shadow rounded-xl p-8">
 
-<p><strong>Status:</strong> <%= @run.status %></p>
-<p><strong>Merchant:</strong> <%= @run.merchant_intake.merchant_name %></p>
+  <h1 class="text-2xl font-bold mb-6">Automation Run</h1>
 
-<% if @run.advertiser %>
-  <p><strong>Advertiser ID:</strong> <%= @run.advertiser.advertiser_external_id %></p>
-<% end %>
+  <p class="mb-2">
+    <strong class="text-gray-700">Status:</strong>
+    <span class="text-gray-900"><%= @run.status %></span>
+  </p>
 
-<% if @run.offer %>
-  <p><strong>Offer ID:</strong> <%= @run.offer.offer_external_id %></p>
-<% end %>
+  <p class="mb-4">
+    <strong class="text-gray-700">Merchant:</strong>
+    <span class="text-gray-900"><%= @run.merchant_intake.merchant_name %></span>
+  </p>
 
-<% if @run.integration_task %>
-  <p><strong>Asana Task GID:</strong> <%= @run.integration_task.asana_task_gid %></p>
-<% end %>
+  <% if @run.advertiser %>
+    <p class="mb-2">
+      <strong class="text-gray-700">Advertiser ID:</strong>
+      <span class="text-gray-900"><%= @run.advertiser.advertiser_external_id %></span>
+    </p>
+  <% end %>
 
-<% if @run.error_message.present? %>
-  <p><strong>Error:</strong> <%= @run.error_message %></p>
-<% end %>
+  <% if @run.offer %>
+    <p class="mb-2">
+      <strong class="text-gray-700">Offer ID:</strong>
+      <span class="text-gray-900"><%= @run.offer.offer_external_id %></span>
+    </p>
+  <% end %>
+
+  <% if @run.integration_task %>
+    <p class="mb-2">
+      <strong class="text-gray-700">Asana Task GID:</strong>
+      <span class="text-gray-900"><%= @run.integration_task.asana_task_gid %></span>
+    </p>
+  <% end %>
+
+  <% if @run.error_message.present? %>
+    <p class="mt-4 text-red-600">
+      <strong>Error:</strong> <%= @run.error_message %>
+    </p>
+  <% end %>
+
+</div>

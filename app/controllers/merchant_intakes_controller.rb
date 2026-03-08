@@ -31,7 +31,7 @@ class MerchantIntakesController < ApplicationController
             task = AsanaTaskCreator.new(intake, run).run!
 
             run.update!(
-                intergration_task: task,
+                integration_task: task,
                 status: "completed",
                 finished_at: Time.current
             ) 

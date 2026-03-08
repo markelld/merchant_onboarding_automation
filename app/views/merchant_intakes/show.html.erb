@@ -1,0 +1,32 @@
+<div class="max-w-xl mx-auto mt-16 bg-white shadow rounded-xl p-8">
+
+  <h1 class="text-2xl font-bold mb-6">Merchant Intake</h1>
+
+  <p class="mb-2">
+    <strong class="text-gray-700">Doc URL:</strong>
+    <span class="text-gray-900"><%= @merchant_intake.google_doc_url %></span>
+  </p>
+
+  <p class="mb-4">
+    <strong class="text-gray-700">Status:</strong>
+    <span class="text-gray-900"><%= @merchant_intake.status %></span>
+  </p>
+
+  <% if @merchant_intake.merchant_name.present? %>
+    <p class="mb-2">
+      <strong class="text-gray-700">Merchant:</strong>
+      <span class="text-gray-900"><%= @merchant_intake.merchant_name %></span>
+    </p>
+
+    <p class="mb-4">
+      <strong class="text-gray-700">Offer:</strong>
+      <span class="text-gray-900"><%= @merchant_intake.offer_name %></span>
+    </p>
+  <% end %>
+
+  <%= button_to "Run Pipeline",
+      run_pipeline_merchant_intake_path(@merchant_intake),
+      method: :post,
+      class: "bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700" %>
+
+</div>
