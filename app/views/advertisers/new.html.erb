@@ -1,34 +1,36 @@
-<h1>Create Advertiser</h1>
+<div class="fixed inset-0 flex justify-center items-center bg-blue-200">
+  <div class="max-w-xl w-full bg-white shadow rounded-xl p-8">
+    <h1 class="text-2xl font-bold mb-6">Create Advertiser</h1>
 
-<%= form_with scope: :advertiser, url: "/portal/advertisers", method: :post do |f| %>
+    <%= form_with scope: :advertiser, url: "/portal/advertisers", method: :post do |f| %>
 
-  <div>
-    <%= f.label :merchant_name, "Merchant Name" %><br>
-    <%= f.text_field :merchant_name, data: { testid: "merchant-name" } %>
+      <div class="mb-4">
+        <%= f.label :merchant_name, "Merchant Name", class: "block text-sm font-medium text-gray-700 mb-1" %><br>
+        <%= f.text_field :merchant_name, data: { testid: "merchant-name" }, class: "w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500" %>
+      </div>
+
+      <div class="mb-4">
+        <%= f.label :website, "Website", class: "block text-sm font-medium text-gray-700 mb-1" %><br>
+        <%= f.text_field :website, data: { testid: "website" }, class: "w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500" %>
+      </div>
+
+      <div class="mb-4">
+        <%= f.label :contact_name, "Contact Name", class: "block text-sm font-medium text-gray-700 mb-1" %><br>
+        <%= f.text_field :contact_name, data: { testid: "contact-name" }, class: "w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500" %>
+      </div>
+
+      <div class="mb-4">
+        <%= f.label :contact_email, "Contact Email", class: "block text-sm font-medium text-gray-700 mb-1" %><br>
+        <%= f.email_field :contact_email, data: { testid: "contact-email" }, class: "w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500" %>
+      </div>
+
+      <div class="mb-4">
+        <%= f.label :vertical, "Vertical", class: "block text-sm font-medium text-gray-700 mb-1" %><br>
+        <%= f.text_field :vertical, data: { testid: "vertical" }, class: "w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500" %>
+      </div>
+
+      <%= f.submit "Create Advertiser", data: { testid: "create-advertiser" }, class: "bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700" %>
+
+    <% end %>
   </div>
-
-  <div>
-    <%= f.label :website, "Website" %><br>
-    <%= f.text_field :website, data: { testid: "website" } %>
-  </div>
-
-  <div>
-    <%= f.label :contact_name, "Contact Name" %><br>
-    <%= f.text_field :contact_name, data: { testid: "contact-name" } %>
-  </div>
-
-  <div>
-    <%= f.label :contact_email, "Contact Email" %><br>
-    <%= f.email_field :contact_email, data: { testid: "contact-email" } %>
-  </div>
-
-  <div>
-    <%= f.label :vertical, "Vertical" %><br>
-    <%= f.text_field :vertical, data: { testid: "vertical" } %>
-  </div>
-
-  <br>
-
-  <%= f.submit "Create Advertiser", data: { testid: "create-advertiser" } %>
-
-<% end %>
+</div>

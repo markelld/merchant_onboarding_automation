@@ -1,2 +1,10 @@
-<h1>Offer Created</h1>
-<p data-testid="offer-id"><%= @offer.offer_external_id %></p>
+<div class="fixed inset-0 flex justify-center items-center bg-blue-200">
+  <div class="max-w-xl w-full bg-white shadow rounded-xl p-8">
+    <h1 class="text-2xl font-bold mb-6">Offer Created</h1>
+
+    <div class="mb-4">
+      <strong class="block text-sm font-medium text-gray-700 mb-1">Offer ID:</strong>
+      <span data-testid="offer-id" class="text-gray-900"><%= @offer.offer_external_id %></span>
+    </div>
+  </div>
+</div>

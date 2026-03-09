@@ -1,31 +1,33 @@
-<h1>Create Offer</h1>
+<div class="fixed inset-0 flex justify-center items-center bg-blue-200">
+  <div class="max-w-xl w-full bg-white shadow rounded-xl p-8">
+    <h1 class="text-2xl font-bold mb-6">Create Offer</h1>
 
-<p>Advertiser: <%= @advertiser.merchant_name %></p>
+    <p class="mb-6 text-gray-700">Advertiser: <strong><%= @advertiser.merchant_name %></strong></p>
 
-<%= form_with scope: :offer, url: "/portal/offers", method: :post do |f| %>
-  <%= f.hidden_field :advertiser_id, value: @advertiser.id %>
+    <%= form_with scope: :offer, url: "/portal/offers", method: :post do |f| %>
+      <%= f.hidden_field :advertiser_id, value: @advertiser.id %>
 
-  <div>
-    <%= f.label :offer_name, "Offer Name" %><br>
-    <%= f.text_field :offer_name, data: { testid: "offer-name" } %>
+      <div class="mb-4">
+        <%= f.label :offer_name, "Offer Name", class: "block text-sm font-medium text-gray-700 mb-1" %>
+        <%= f.text_field :offer_name, data: { testid: "offer-name" }, class: "w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500" %>
+      </div>
+
+      <div class="mb-4">
+        <%= f.label :payout_type, "Payout Type", class: "block text-sm font-medium text-gray-700 mb-1" %>
+        <%= f.text_field :payout_type, data: { testid: "payout-type" }, class: "w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500" %>
+      </div>
+
+      <div class="mb-4">
+        <%= f.label :payout_amount, "Payout Amount", class: "block text-sm font-medium text-gray-700 mb-1" %>
+        <%= f.text_field :payout_amount, data: { testid: "payout-amount" }, class: "w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500" %>
+      </div>
+
+      <div class="mb-4">
+        <%= f.label :tracking_method, "Tracking Method", class: "block text-sm font-medium text-gray-700 mb-1" %>
+        <%= f.text_field :tracking_method, data: { testid: "tracking-method" }, class: "w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500" %>
+      </div>
+
+      <%= f.submit "Create Offer", data: { testid: "create-offer" }, class: "bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700" %>
+    <% end %>
   </div>
-
-  <div>
-    <%= f.label :payout_type, "Payout Type" %><br>
-    <%= f.text_field :payout_type, data: { testid: "payout-type" } %>
-  </div>
-
-  <div>
-    <%= f.label :payout_amount, "Payout Amount" %><br>
-    <%= f.text_field :payout_amount, data: { testid: "payout-amount" } %>
-  </div>
-
-  <div>
-    <%= f.label :tracking_method, "Tracking Method" %><br>
-    <%= f.text_field :tracking_method, data: { testid: "tracking-method" } %>
-  </div>
-
-  <br>
-
-  <%= f.submit "Create Offer", data: { testid: "create-offer" } %>
-<% end %>
+</div>

@@ -2,7 +2,7 @@
 <html>
   <head>
     <title><%= content_for(:title) || "Merchant Onboarding Automation" %></title> 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="application-name" content="Merchant Onboarding Automation">
@@ -24,7 +24,7 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
+  <body class="min-h-screen bg-blue-200 flex items-center justify-center">
     <main class="container mx-auto mt-28 px-5 flex">
       <%= yield %>
     </main>
