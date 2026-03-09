@@ -7,8 +7,6 @@ Automates merchant onboarding by ingesting a Google Doc intake and performing po
 
 [![Watch the demo](https://cdn.loom.com/sessions/thumbnails/da556993b1b74ae792cc10b8e84b1bfa-with-play.gif)](https://www.loom.com/share/da556993b1b74ae792cc10b8e84b1bfa)
 
----
-
 # Problem
 
 Affiliate platforms frequently onboard new merchants through a manual operational workflow:
