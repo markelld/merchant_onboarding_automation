@@ -1,8 +1,11 @@
 # README 
+# Merchant Onboarding Automation
 
-# Merchant Onboarding Automation Pipeline
+Automates merchant onboarding by ingesting a Google Doc intake and performing portal setup through browser automation.
 
-This project demonstrates an **automation pipeline that replaces a manual merchant onboarding workflow** commonly used in affiliate and adtech platforms. 
+## Demo
+
+[![Watch the demo](https://cdn.loom.com/sessions/thumbnails/da556993b1b74ae792cc10b8e84b1bfa-with-play.gif)](https://www.loom.com/share/da556993b1b74ae792cc10b8e84b1bfa)
 
 Many affiliate networks onboard new merchants through a manual process that includes:
 
