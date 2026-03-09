@@ -5,7 +5,7 @@ Automates merchant onboarding by ingesting a Google Doc intake and performing po
 
 ## Demo
 
-[![Watch the demo](https://cdn.loom.com/sessions/thumbnails/da556993b1b74ae792cc10b8e84b1bfa-with-play.gif)](https://www.loom.com/share/da556993b1b74ae792cc10b8e84b1bfa)
+[![Watch the demo](https://cdn.loom.com/sessions/thumbnails/da556993b1b74ae792cc10b8e84b1bfa)](https://www.loom.com/share/da556993b1b74ae792cc10b8e84b1bfa)
 
 # Problem
 
